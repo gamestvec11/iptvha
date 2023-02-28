@@ -1,0 +1,6 @@
+RewriteEngine on 
+Options -Indexes
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^/]*) iboxbr.php?action=$1 [NC,L]
+DirectoryIndex index.php
